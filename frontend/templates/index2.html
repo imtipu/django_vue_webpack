@@ -1,0 +1,17 @@
+{% load render_bundle from webpack_loader %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{#    {% render_bundle "vendor" "css" %}#}
+{#    {% render_bundle "app" "css" %}#}
+    <link rel="stylesheet" href="{% static 'test/test.css' %}">
+</head>
+<body>
+<div id="app"></div>
+{#{% render_bundle "manifest" "js" %}#}
+{#{% render_bundle "chunk-vendors" %}#}
+{#{% render_bundle "app" "js" %}#}
+{% render_bundle "app" %}
+</body>
+</html>

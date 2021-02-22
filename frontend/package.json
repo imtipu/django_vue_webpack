@@ -1,0 +1,34 @@
+{
+  "name": "django_vue_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.2.0",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack-bundle-tracker": "^0.4.3"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack serve --mode development --env development --hot --port 3000",
+    "prod": "webpack --mode production"
+  },
+  "author": "Borhan Tipu <me@imtipu.me>",
+  "license": "ISC"
+}
